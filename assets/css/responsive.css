@@ -1,0 +1,139 @@
+@import "./color.css";
+/* PC */
+
+@media (min-width: 64em) {
+    .nav li a {
+        display: inline-block;
+    }
+}
+
+/* Tablet */
+
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .nav li a {
+        display: inline-block;
+    }
+
+    .contact-info {
+        line-height: 2;
+
+    }
+}
+
+/* Tablet & Mobile */
+
+@media (max-width: 63.9375em) {
+    .btn {
+        padding: 15px 16px;
+    }
+
+    .form-control {
+        padding: 15px;
+    }
+
+    .social-media a {
+        font-size: 40px;
+        margin: 0 8px;
+    }
+
+    .copyright {
+        font-size: 30px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 46.1875em){
+/* Common */
+
+    .s-full-width,
+    .s-col-full {
+        width: 100% !important;
+    }
+
+    .s-mt-8 {
+        margin-top: 8px !important;
+    }
+
+/* Header */
+
+    .header {
+       overflow: hidden;
+
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .nav .subnav {
+        position: initial;
+        background-color: var(--black);
+    }
+    
+    .nav .subnav a {
+        color: var(--white);
+    }
+
+    .nav > li {
+        display: block;
+    }
+
+    .nav > li:first-child {
+        display: inline-block;
+    }
+
+    .nav > li:hover > a,
+.nav .subnav li:hover {
+    color: var(--black);
+    background-color: var(--grey);
+}
+
+    .search-btn {
+        display: none;
+    }
+
+    .menu-btn  {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all .5s;
+    }
+
+    .menu-btn .menu-icon {
+        color: var(--white);
+        line-height: 46px;
+        padding: 0 21px;
+    }
+
+    .menu-btn:hover {
+        background-color: var(--grey);
+    }
+    
+    .menu-btn:hover .menu-icon {
+        color: var(--black);
+    }
+
+/* Content */
+
+    .content .member-item {
+        margin-top: 31px;
+    }
+/* Tour */
+    .places-list .place-item {
+        margin-bottom: 15px;
+    }
+
+    .places-list .place-btn {
+        text-align: center;
+    }
+
+/* Contact */
+
+    .contact-info {
+        margin-bottom: 32px;
+        line-height: 2.5;
+    }
+}
